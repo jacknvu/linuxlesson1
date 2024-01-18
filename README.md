@@ -4,9 +4,10 @@
 ssh -l pi 192.168.1.70
 
 cd dev
-mkdir <user2>
-cp ../<user1>/t*.py .
-cp ../<user1>/*.csv .
+mkdir user2
+cd user2
+cp ../user1/t*.py .
+cp ../user1/*.csv .
 
 Edit script:
 vi t*.py
