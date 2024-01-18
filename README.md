@@ -1,6 +1,7 @@
 # linuxlesson1
 
 
+'''
 ssh -l pi 192.168.1.70
 
 cd dev
@@ -19,3 +20,4 @@ t*.py *.csv |grep -v debug
 
 Pipe to awk to print total:
 t*.py *.csv | grep i_rent | awk -F, '{ print $4; tot+=$4; }END {print "Total:",tot}'
+'''
