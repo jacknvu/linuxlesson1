@@ -1,23 +1,29 @@
 # linuxlesson1
 
 
-'''
-ssh -l pi 192.168.1.70
 
-cd dev
-mkdir user2
-cd user2
-cp ../user1/t*.py .
-cp ../user1/*.csv .
+1. ssh -l pi 192.168.1.70
 
-Edit script:
+2. cd dev
+3. mkdir user2
+4. cd user2
+5. cp ../user1/t*.py .
+6. cp ../user1/*.csv .
+
+7. Edit script:
+```
 vi t*.py
+```
 
-To run script:
+9. To run script:
+```
 t*.py *.csv
 
 t*.py *.csv |grep -v debug
+```
 
-Pipe to awk to print total:
+10. Pipe to awk to print total:
+```
 t*.py *.csv | grep i_rent | awk -F, '{ print $4; tot+=$4; }END {print "Total:",tot}'
-'''
+```
+
